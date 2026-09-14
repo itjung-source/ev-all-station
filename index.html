@@ -24,7 +24,7 @@
  <span class="dot" style="background:#0288d1"></span>PTT <span id="cPTT" style="color:#888"></span><br>
  <span class="dot" style="background:#2e7d32"></span>EleXA <span id="cEleXA" style="color:#888"></span><br>
  <span class="dot" style="background:#ef6c00"></span>PEA VOLTA <span id="cPEA" style="color:#888"></span><br>
- <span class="hubmk" style="background:#555;width:16px;height:16px;line-height:13px;font-size:10px;vertical-align:middle;display:inline-block">H</span> หมุดตัว <b>H</b> = สถานี Hub (chargers ≥3 หัว)<br>
+ <span class="hubmk" style="background:#e53935;width:16px;height:16px;line-height:13px;font-size:10px;vertical-align:middle;display:inline-block">H</span> หมุดตัว <b>H</b> = สถานี Hub (chargers ≥3 หัว)<br>
  <small style="color:#666">เริ่มต้นเปิดเฉพาะ PTT · เปิดค่ายอื่นที่ปุ่มขวาบน</small></div>
 </div>
 <div id="map"></div>
@@ -41,7 +41,7 @@ D.groups.forEach(function(g){
  list.forEach(function(s){
   var m;
   if(s.hub){
-   m=L.marker([s.lat,s.lng],{icon:L.divIcon({html:'<div class="hubmk" style="background:'+g.color+';border-color:#fff">H</div>',className:'',iconSize:[20,20],iconAnchor:[10,10]}),zIndexOffset:500});
+   m=L.marker([s.lat,s.lng],{icon:L.divIcon({html:'<div class="hubmk" style="background:#e53935;border-color:#fff">H</div>',className:'',iconSize:[20,20],iconAnchor:[10,10]}),zIndexOffset:500});
   }else{
    m=L.circleMarker([s.lat,s.lng],{radius:6,color:'#fff',weight:1.5,fillColor:g.color,fillOpacity:.95});
   }
